@@ -1,0 +1,13 @@
+name: 'Mathias Moser'
+super: true
+id: 360d6c52-2396-4c97-b49c-ccc1bb66d0d0
+password_hash: $2y$10$ajbWfzoekGfD0EqPBrbFWu4.SMFfPlARZeQOqHlItUMruzihGQB.m
+preferences:
+  assets:
+    assets:
+      mode: grid
+  collections:
+    users:
+      columns:
+        - title
+        - slug

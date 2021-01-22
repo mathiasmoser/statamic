@@ -1,0 +1,9 @@
+title: Users
+template: users
+layout: layout
+revisions: false
+route: 'users/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

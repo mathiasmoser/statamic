@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link href="{{ mix src='css/tailwind.css' }}" rel="stylesheet" >
+</head>
+<body>
+    <div class="container max-w-3xl mx-auto py-8">
+
+        <ul class="flex mb-20">
+            {{ nav:main_navigation }}
+            <li class="mr-6">
+                <a class="text-blue-500 hover:text-blue-800" href="{{ url }}">{{ title }}</a>
+            </li>
+            {{ /nav:main_navigation }}
+        </ul>
+
+        {{ template_content }}
+    </div>
+</body>
+</html>
