@@ -3,6 +3,24 @@
 {{ description }}
 </p>
 
+{{ table | table }}
+
+{{ if video | is_embeddable }}
+    <!-- Youtube and Vimeo -->
+    <iframe src="{{ video | embed_url }}" ...></iframe>
+{{ else }}
+    <!-- Other HTML5 video types -->
+    <video src="{{ video | embed_url }}" ...></video>
+{{ /if }}
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+{{ assets }}
+		<img class="w-full" src="{{ url }}" alt="{{ alt }}" />
+{{ /assets }}
+</div>
+
+
 {{ form:testform }}
     {{ if success }}
         <div class="bg-green-300 text-white p-2">
