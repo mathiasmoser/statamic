@@ -1,9 +1,0 @@
-title: 'Kontakt Infos'
-data:
-  textarea: Testkontaktinfos
-  color: '#2A37CD'
-  radio: '1'
-  grid:
-    - {  }
-    - {  }
-    - {  }
